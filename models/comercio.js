@@ -8,6 +8,12 @@ const comercioSchema= Mongoose.Schema({
     direccion:{type:String,required:true}
 
 })
+comercioSchema.statics.Constructor=function(nombre,direccion){
+    return new this({
+        nombre:nombre,
+        direccion:direccion
+    })
+}
 
 module.exports= Mongoose.model('Comercio',comercioSchema)
 

@@ -36,7 +36,7 @@ controlador.registrar= async (req,res)=>{
     .then((entidad)=>res.status(200).send(entidad))
     .catch((err)=>res.status(400).send(
         {
-            "error":"Hubo un error al ingresar el nuevo comercio",
+            "error":"Hubo un error al guardar el nuevo comercio",
             
         } 
         ));
