@@ -1,4 +1,4 @@
-const  Mongoose  =require( "mongoose");
+import Mongoose from "mongoose";
 
 
 
@@ -15,5 +15,5 @@ comercioSchema.statics.Constructor=function(nombre,direccion){
     })
 }
 
-module.exports= Mongoose.model('Comercio',comercioSchema)
+export default Mongoose.model('Comercio',comercioSchema)
 

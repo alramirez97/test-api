@@ -1,5 +1,5 @@
 //referencia al modelo
-const comercio =require( "../models/comercio.js")
+import comercio from "../models/comercio.js"
 
 const controlador={}
 
@@ -57,4 +57,4 @@ controlador.actualizar= async (req,res)=>{
 
 
 
-module.exports= controlador
+export default controlador

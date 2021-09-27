@@ -1,7 +1,7 @@
-const  Express  =require("express");
-const Morgan =require("morgan");
+import Express from "express";
+import Morgan from "morgan";
 
-const RutasComercio =require("./routes/comercio.routes.js")
+import RutasComercio from "./routes/comercio.routes.js"
 
 
 const app = Express();
@@ -17,8 +17,7 @@ app.get("/",(req,res)=>{
     res.send("hola");
 })
 
-
-module.exports= app
+export default app
 
 
 

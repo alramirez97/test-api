@@ -1,4 +1,4 @@
-import { listen, get } from './app.js';
+import app from './app.js';
 import DB from './database.js';
 
-listen(get('puerto'),()=>console.log("Servidor en línea " + get('puerto')) );
+app.listen(app.get('puerto'),()=>console.log("Servidor en línea " + app.get('puerto')) );
